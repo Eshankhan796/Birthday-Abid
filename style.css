@@ -1,0 +1,116 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  user-select: none;
+}
+
+@keyframes flag {
+  0% {
+    transform: translateY(-100%);
+  }
+
+  25% {
+    transform: translateY(0%);
+  }
+
+  50% {
+    transform: translateY(-4.5px);
+  }
+
+  100% {
+    transform: translateY(0%);
+  }
+}
+
+body {
+  font-family: 'Birthstone Bounce', cursive;
+  font-family: 'Happy Monkey', cursive;
+  font-family: 'Kaushan Script', cursive;
+  background-color: #f9fafe;
+  color: #FFD700;
+}
+
+.party-flag {
+  z-index: 999;
+  position: sticky;
+  top: 0;
+  left: 0;
+  width: 100%;
+  transform: translateY(-100%);
+  animation: flag 1.5s ease forwards;
+  pointer-events: none;
+}
+
+.B1 {
+  padding: 5px 10px;
+  margin: -80px auto 0 auto;
+  background: #2e3844;
+  max-width: 600px;
+  width: 90%;
+}
+
+.B2 {
+  border: 2px solid #FFAC1C;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  padding-bottom: 20px;
+}
+
+.B3 {
+  font-family: 'Kaushan Script', cursive;
+  font-size: 60px;
+}
+
+.B4 {
+  font-family: 'Birthstone Bounce', cursive;
+  font-size: 40px;
+  margin-bottom: 10px;
+}
+
+.B5 {
+  width: 300px;
+  border: 10px solid #fff;
+  border-bottom-width: 40px;
+  border-radius: 5px;
+}
+
+.B6 {
+  font-size: 20px;
+  position: relative;
+  top: -32px;
+  font-family: 'Happy Monkey', cursive;
+}
+
+.B7 {
+  width: 150px;
+  border-radius: 5px;
+  rotate: -15deg;
+  float: left;
+  transition: rotate .5s ease;
+}
+
+.B7:hover,
+.B8:hover {
+  rotate: 0deg;
+}
+
+.B8 {
+  width: 150px;
+  border-radius: 5px;
+  rotate: 15deg;
+  float: right;
+  transition: rotate .5s ease;
+}
+
+.B9 {
+  margin-top: 100px;
+  width: 80%;
+  max-width: 100%;
+  display: flex;
+  gap: 0 30px;
+  align-items: center;
+}
+
